@@ -1,0 +1,8 @@
+To: kingchristopher345@gmail.com
+Subject: OTP CODE
+From:noreply@website.com  
+X-Mailer: PHP5
+MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+
+Hi ChrisK, <br><br>Your 4 digit OTP Code is: 0309<br><br>If you have not requested OTP then ignore this message.

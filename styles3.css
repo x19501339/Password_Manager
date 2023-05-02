@@ -1,0 +1,82 @@
+/* styling for Password generator */
+
+body{
+    background: #222;
+    color: white;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container{ 
+    background: #242026;
+    box-shadow: 0 15px 25px rgba(37, 115, 179, 0.7);
+    padding: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+    column-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    margin: 0;
+    text-align: center;
+}
+
+label{
+    font-weight: bold;
+}
+
+.character-amount-container{
+    display: flex;
+    align-items: center;
+}
+
+.number-input{
+    width: 2rem;
+}
+
+.password-display{
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border: 1px #222;
+    height: 2rem;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-all;
+    border-radius: .5rem;
+}
+
+.btn{
+    grid-column: span 2;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: .5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.btn:hover {
+    background-color:rgba(37, 115, 179, 0.7);
+    color: #fff;
+    box-shadow: 0 0 5px #2573b3, 0 0 25px #2573b3, 0 0 50px #2573b3, 0 0 100px #2573b3;
+}
+

@@ -1,0 +1,309 @@
+/* styling for login */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+:root {
+    --font-style: 'Nunito Sans', sans-serif:
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #131315;
+    font-family: var(--font-style);
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #242026;
+    box-shadow: 0 15px 25px rgba(143, 124, 236, 0.7);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.login-box .user-box input {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box select {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box select option {
+    color: #8f7cec;
+}
+
+.login-box form .error-msg {
+    margin: 10px 0;
+    display: block;
+    background-color: crimson;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.login-box .user-box label {
+    position: relative;
+    left: 0;
+    top: -20px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus-label,
+.login-box .user-box input:valid-label {
+    top: -85px;
+    left: 0;
+    color: #8f7cec;
+    font-size: 12px;
+}
+
+.button,
+#submit {
+    padding: 10px 20px;
+    color: #cbbddb;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    border: 1px solid #8f7cec;
+    margin: auto;
+    background-color: transparent;
+}
+
+.button:hover,
+#submit:hover {
+    background-color: #8f7cec;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #8f7cec, 0 0 25px #8f7cec, 0 0 50px #8f7cec, 0 0 100px #8f7cec;
+}
+
+.button-form {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+/* stying for regestration */
+
+#register {
+    font-size: 14px;
+    text-decoration: none;
+    color: #cbbddb;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+}
+
+#register a {
+    margin: auto;
+    color: #8f7cec;
+    text-decoration: none;
+}
+
+.welcome-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #242026;
+    box-shadow: 0 15px 25px rgba(143, 124, 236, 0.7);
+    border-radius: 10px;
+}
+
+/* styling for home page */
+
+.welcome-box h3 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.Container {
+    text-align: center;
+    color: white;
+}
+
+.Container h3 {
+    font-size: 20px;
+    color: white;
+}
+
+.Container h3 span {
+    background-color: crimson;
+    color: white;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+.Container h1 {
+    font-size: 30px;
+    color: white;
+}
+
+.Container h1 span {
+    color: crimson;
+}
+
+.Container p {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.body_index {
+    font-family: var(--font-style);
+    background-color: #131315;
+}
+
+ul {
+    margin: 1%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+header li {
+    margin: auto;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+header nav li:after {
+    display: block;
+}
+
+header nav li:hover::after {
+    transform: scaleX(1);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+/*ERROR STYLING*/
+.info,
+.success,
+.warning,
+.error {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding: 15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+.info {
+    color: #00529B;
+    background-color: #BDE5F8;
+    background-image: url('https://i.imgur.com/ilgqWuX.png');
+}
+
+.success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image: url('https://i.imgur.com/Q9BGTuy.png');
+}
+
+.warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url('https://i.imgur.com/Z8q7ww7.png');
+}
+
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('https://i.imgur.com/GnyDvKN.png');
+}
+
+/*ERROR STYLING*/
+
+.line1 {
+    width: 100%;
+    height: 2px;
+    background-color: #8f7cec;
+;
+}
+
+pre {
+    color: white;
+}
+
+.notched {
+    position: relative;
+    width: 160px;
+    height: 150px;
+    background-color: #131315;
+    overflow: hidden;
+}
+.notched:after {
+    content: "";
+    position: absolute;
+    margin: 66px 133px;
+    width: 66px;
+    height: 127px;
+    transform: rotate(45deg);
+    background-color: black;
+    border: 1px solid #fff;
+}
+.inner{
+    color: #fff;
+    position: absolute;
+    border: 1px solid white;
+    width:100%;
+    height:100%;
+    margin: 0;
+    text-align: center;
+    padding-top: 35px;
+}
+.accounts{
+    height: 150px;
+    width: 160px;
+
+}
